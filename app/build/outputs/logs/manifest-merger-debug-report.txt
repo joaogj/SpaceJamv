@@ -1,0 +1,97 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:2:1-39:12
+MERGED from [com.android.support:appcompat-v7:21.0.3] C:\Users\Joao Gabriel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-21.0.3.aar\60a2672d8eab07598cb635169824c730\AndroidManifest.xml:14:4-17:12
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Joao Gabriel\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\ef46e5aeb8f1b37ac24036a76b1fbcb7\AndroidManifest.xml:14:4-17:12
+INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:2:1-39:12
+	package
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:3:5-39
+		INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:21.0.3] C:\Users\Joao Gabriel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-21.0.3.aar\60a2672d8eab07598cb635169824c730\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:appcompat-v7:21.0.3] C:\Users\Joao Gabriel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-21.0.3.aar\60a2672d8eab07598cb635169824c730\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Joao Gabriel\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\ef46e5aeb8f1b37ac24036a76b1fbcb7\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Joao Gabriel\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\ef46e5aeb8f1b37ac24036a76b1fbcb7\AndroidManifest.xml:15:5-42
+INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:8:9-34
+		INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:11:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:12:5-65
+	android:name
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:12:22-63
+application
+ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:14:5-37:19
+MERGED from [com.android.support:appcompat-v7:21.0.3] C:\Users\Joao Gabriel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-21.0.3.aar\60a2672d8eab07598cb635169824c730\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:appcompat-v7:21.0.3] C:\Users\Joao Gabriel\.gradle\caches\transforms-1\files-1.1\appcompat-v7-21.0.3.aar\60a2672d8eab07598cb635169824c730\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Joao Gabriel\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\ef46e5aeb8f1b37ac24036a76b1fbcb7\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Joao Gabriel\.gradle\caches\transforms-1\files-1.1\support-v4-21.0.3.aar\ef46e5aeb8f1b37ac24036a76b1fbcb7\AndroidManifest.xml:16:5-19
+	android:label
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:17:9-41
+	android:icon
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:16:9-45
+	android:allowBackup
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:15:9-35
+activity#com.example.spacejamv.CurrentSceneActivity
+ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:18:9-28:20
+	android:screenOrientation
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:21:13-50
+	android:label
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:20:13-45
+	android:name
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:19:13-70
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:23:13-27:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:26:27-74
+receiver#com.example.acelerometro.BroadcastReceiverAux
+ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:30:8-35:20
+	android:label
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:30:54-90
+	android:name
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:30:18-53
+intent-filter#action:name:ALARME_DISPARADO+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:31:13-34:29
+action#ALARME_DISPARADO
+ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:32:17-58
+	android:name
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:32:25-56
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:33:17-75
+	android:name
+		ADDED from C:\Users\Joao Gabriel\AndroidStudioProjects\SpaceJamv\app\src\main\AndroidManifest.xml:33:27-73
