@@ -31,13 +31,16 @@ public class EnemyManager extends Actor{
 	private void Spawn(){	
 		if(enemies.size() < 3){
 			Random random = new Random();
-			if(random.nextDouble() > 0.5f){
-				enemies.add(new Enemy_Follower((int) (CurrentScene.screenW/1.2f + ( CurrentScene.screenW/6 * enemies.size())), 
-				(int) (CurrentScene.screenH * random.nextDouble()), this.c));
-			}else{
-				enemies.add(new Enemy_Shoter( (int) (CurrentScene.screenW/1.2), 
-				(int) (CurrentScene.screenH * random.nextDouble()), this.c));
-			}		
+			random.nextDouble();
+//			if(random.nextDouble() > 0.5f){
+//				enemies.add(new Enemy_Follower((int) (CurrentScene.screenW/1.2f + ( CurrentScene.screenW/6 * enemies.size())),
+//				(int) (CurrentScene.screenH * random.nextDouble()), this.c));
+//			}else{
+//				enemies.add(new Enemy_Shoter( (int) (CurrentScene.screenW/1.2),
+//				(int) (CurrentScene.screenH * random.nextDouble()), this.c));
+//			}
+
+			enemies.add(new Enemy_Shoter( (int) (CurrentScene.screenW/1.2), (int) (CurrentScene.screenH * random.nextDouble()), this.c));
 		}
 	}
 	

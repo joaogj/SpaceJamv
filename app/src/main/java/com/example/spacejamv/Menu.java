@@ -16,11 +16,9 @@ public class Menu extends Scene{
 	protected void draw(Canvas canvas) {
 		//canvas.drawText("MENU", CurrentScene.screenW/2 - painter.getTextSize(), CurrentScene.screenH/2, painter);
 		drawCenter(canvas, painter[1], "MENU");
-		canvas.drawText("Breno Brocco", 0, (float) (CurrentScene.screenH/1.6), painter[0]);
-		canvas.drawText("Wendell Machado", 0, (float) (CurrentScene.screenH/1.4), painter[0]);
-		canvas.drawText("Joao Gabriel", 0, (float) (CurrentScene.screenH/1.25), painter[0]);
-		canvas.drawText("Joao Platonow", 0, (float) (CurrentScene.screenH/1.15), painter[0]);
-		canvas.drawText("Natal", 0, (float) (CurrentScene.screenH/1.05), painter[0]);
+		canvas.drawText("João Gabriel", 0, (float) (CurrentScene.screenH/1.6), painter[0]);
+		canvas.drawText("João Vítor", 0, (float) (CurrentScene.screenH/1.4), painter[0]);
+		canvas.drawText("Matheus Escovino", 0, (float) (CurrentScene.screenH/1.25), painter[0]);
 	}
 
 	@Override

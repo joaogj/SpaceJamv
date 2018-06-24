@@ -1,4 +1,4 @@
-#Sat Jun 23 23:09:20 BRT 2018
+#Sun Jun 24 19:48:20 BRT 2018
 base.0=C\:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\8
 path.0=classes.dex
 renamed.0=classes.dex
