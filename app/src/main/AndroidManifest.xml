@@ -7,9 +7,6 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="23" />
-
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.VIBRATE"/>
     
     <application
         android:allowBackup="true"
@@ -28,13 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />   
             </intent-filter>
         </activity>
-       
-       <receiver android:name="BroadcastReceiverAux" android:label="BroadcastReceiverAux">
-            <intent-filter>
-                <action android:name="ALARME_DISPARADO"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </receiver>
         
     </application>
 

@@ -3,7 +3,6 @@ package com.example.spacejamv;
 import com.example.acelerometro.R;
 
 import android.content.Context;
-import android.content.res.Resources;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
