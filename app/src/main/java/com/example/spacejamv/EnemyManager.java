@@ -46,6 +46,7 @@ public class EnemyManager extends Actor{
 	{
 		Spawn();
 		ship.isCanShot();
+		ship.getScore();
 		//for dos inimigos
 		for(int i = 0; i < enemies.size(); i++){
 			enemies.get(i).Update(ship);
@@ -53,7 +54,7 @@ public class EnemyManager extends Actor{
 			// Inimigos canto da tela
 			if(Collision3(enemies.get(i))){
 				enemies.remove(i);
-				ship.score --;
+				//ship.setScore(); --;
 				break;
 			}
 			
@@ -81,7 +82,7 @@ public class EnemyManager extends Actor{
 					enemies.remove(i);
 					ship.shots.remove(j);
 					ship.setCanShot(true);
-					ship.score ++;
+					ship.setScore(ship.getScore()+1);
 					break;
 				}
 				

@@ -32,7 +32,7 @@ public class Enemy_Follower extends Enemy
 	public void Update(Ship ship){
 		
 		//movement
-		this.x -= CurrentScene.screenW/1150 * (ship.score/10 + 10 /10);
+		this.x -= CurrentScene.screenW/1150 * (ship.getScore()/10 + 10 /10);
 		
 		if(this.y > ship.y){
 			this.y -= CurrentScene.screenH/400;

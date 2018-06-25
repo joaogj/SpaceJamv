@@ -27,7 +27,7 @@ public class Game extends Scene
 		EnemyManager.draw(canvas, painter[1]);
 
 		canvas.drawText("Record : " + ship.record.getRecordString(), (float) (CurrentScene.screenW/1.4), (float) (CurrentScene.screenH/13), painter[0]);
-		canvas.drawText("Score : " + Integer.toString(ship.score), (float) (CurrentScene.screenW/1.4), (float) (CurrentScene.screenH/7), painter[0]);
+		canvas.drawText("Score : " + Integer.toString(ship.getScore()), (float) (CurrentScene.screenW/1.4), (float) (CurrentScene.screenH/7), painter[0]);
 
 	}
 

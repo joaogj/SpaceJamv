@@ -21,7 +21,12 @@ public class Ship extends Actor
 	public List<Shot> shots;
 	
 	public Record record;
-	public int score;
+
+	public int getScore() {return score;}
+
+	public void setScore(int score) { this.score = score; }
+
+	private int score;
 
 	public boolean isCanShot() {
 		return canShot;
@@ -33,12 +38,10 @@ public class Ship extends Actor
 
 	private boolean canShot = true;
 
-	Resources r;
-	
 	public Ship(int x, int y, Context c)
 	{
 		c.getResources();
-		shots = new ArrayList<Shot>();
+		shots = new ArrayList<>();
 		this.x = x;
 		this.y = y;
 		this.c = c;
@@ -53,7 +56,6 @@ public class Ship extends Actor
 	public void draw(Canvas canvas, Paint painter)
 	{
 		canvas.drawRect(new Rect(0 ,0, CurrentScene.screenW/15 * this.life, CurrentScene.screenH/15), painter);
-		
 		canvas.drawBitmap(img, this.x, this.y, painter);
 		
 		for(int i = 0; i < shots.size(); i++)
