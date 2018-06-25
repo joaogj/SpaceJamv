@@ -14,6 +14,7 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.PowerManager;
 import android.util.Log;
+import android.view.Window;
 
 public class CurrentSceneActivity extends Activity implements SensorEventListener {
      
@@ -35,6 +36,9 @@ public class CurrentSceneActivity extends Activity implements SensorEventListene
         final PowerManager pm = (PowerManager) getSystemService(Context.POWER_SERVICE);
         this.mWakeLock = pm.newWakeLock(PowerManager.SCREEN_DIM_WAKE_LOCK, "My Tag");
         this.mWakeLock.acquire();
+
+        //Remove title bar
+        //this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         
         boolean alarmeAtivo = (PendingIntent.getBroadcast(this, 0, new Intent("ALARME_DISPARADO"), PendingIntent.FLAG_NO_CREATE) == null);
 		
@@ -56,7 +60,7 @@ public class CurrentSceneActivity extends Activity implements SensorEventListene
 		}
 		else
 		{
-			Log.i("Script", "Alarme já ativo");
+			Log.i("Script", "Alarme jï¿½ ativo");
 		}
          
     }
