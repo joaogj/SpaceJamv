@@ -96,7 +96,7 @@ public class Ship extends Actor
 	{
 		Collision();
 		
-		if(life == 0){
+		if(life <= 0){
 			this.record.SaveRecord(score);
 			CurrentScene.canInstantiate = true;
 			CurrentScene.changeScene = "gameover";
