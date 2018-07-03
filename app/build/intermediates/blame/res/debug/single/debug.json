@@ -276,12 +276,12 @@
         "source": "C:\\Users\\Joao Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\60a2672d8eab07598cb635169824c730\\res\\drawable-mdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "C:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_view_list_nav_layout.xml.flat",
-        "source": "C:\\Users\\Joao Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\60a2672d8eab07598cb635169824c730\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_life.png.flat",
         "source": "C:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\src\\main\\res\\drawable-mdpi\\life.png"
+    },
+    {
+        "merged": "C:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_view_list_nav_layout.xml.flat",
+        "source": "C:\\Users\\Joao Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\60a2672d8eab07598cb635169824c730\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "C:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_abc_tab_indicator_mtrl_alpha.9.png.flat",
@@ -890,6 +890,10 @@
     {
         "merged": "C:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_bg.jpg.flat",
         "source": "C:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\src\\main\\res\\drawable-mdpi\\bg.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\res\\merged\\debug\\raw_newmoon.mp3.flat",
+        "source": "C:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\src\\main\\res\\raw\\newmoon.mp3"
     },
     {
         "merged": "C:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_dark.xml.flat",

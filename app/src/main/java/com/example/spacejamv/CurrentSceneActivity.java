@@ -6,12 +6,16 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+
+import com.example.acelerometro.R;
 
 public class CurrentSceneActivity extends Activity implements SensorEventListener {
      
     private SensorManager mSensorManager;
     private Sensor mAccelerometer;
+    private MediaPlayer mediaPlayer;
 
     
     public static float x,y,z;
@@ -24,6 +28,9 @@ public class CurrentSceneActivity extends Activity implements SensorEventListene
          
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mediaPlayer = MediaPlayer.create(CurrentSceneActivity.this, R.raw.newmoon);
+        mediaPlayer.setLooping(true);
+        mediaPlayer.start();
     }
        
     @Override

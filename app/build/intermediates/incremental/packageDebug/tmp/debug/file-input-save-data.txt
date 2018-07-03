@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jul 03 02:18:47 BRT 2018
+#Tue Jul 03 03:43:45 BRT 2018
 1.base=C\:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 2.path=classes.dex
 0.baseType=DIRECTORY
