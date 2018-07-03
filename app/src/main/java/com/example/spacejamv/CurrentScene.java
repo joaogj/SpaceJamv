@@ -11,8 +11,7 @@ import android.view.View;
 
 public class CurrentScene extends View implements Runnable
 {
-	//private final int FRAME_PERIOD = 1000 / 50; //50 é o fps desejado
-	
+
 	public static int screenW, screenH;
 
 	private int time = 1;	
@@ -43,7 +42,7 @@ public class CurrentScene extends View implements Runnable
 		paint.setTextSize(screenW/5);
 		
 		handler = new Handler();
-		handler.post(this);		
+		handler.post(this);
 		
 		Log.d("View", "Boom");
 	}
@@ -64,6 +63,9 @@ public class CurrentScene extends View implements Runnable
 	
 	private void update()
 	{
+		//Log.d("WIDTH", String.valueOf(screenW));
+		//Log.d("HEIGHT", String.valueOf(screenH));
+
 		if(canInstantiate){
 			switch(changeScene){
 			
@@ -90,13 +92,13 @@ public class CurrentScene extends View implements Runnable
 	}
 	
 	public void run()
-	{		
-		//Adiciona o Runnable na fila de mensagens da thread principal para ser executado depois de um tempo específico.
+	{
+		//Adiciona o Runnable na fila de mensagens da thread principal para ser executado depois de um tempo espec?fico.
 		// Em outras palavras, reexecuta o run.
-		
+
 		handler.postDelayed(this, time);
-		
+
 		update();
 		postInvalidate();
-	}	
+	}
 }

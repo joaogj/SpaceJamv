@@ -54,14 +54,14 @@ public class Enemy_Shoter extends Enemy
 				shots.add(new Shot(this.x - this.width, (int) (this.y - this.height/3f), this.c));
 			}
 		}
-		
+
 		for(int i = 0; i < shots.size(); i++)
 		{
 			shots.get(i).Update(-CurrentScene.screenH/80);
 			
 			if(ship.Collision4(ship, shots.get(i))){
 				shots.remove(i);
-				ship.life --;
+				ship.life--;
 				break;
 			}
 			

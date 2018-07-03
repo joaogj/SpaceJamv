@@ -20,7 +20,7 @@ public abstract class Enemy
 	protected void Update(Ship ship){	
 	}
 	
-	protected boolean Collision1(Actor actor, Actor actor2){
+	protected boolean Collision1(Enemy_Shoter actor, Enemy_Shoter actor2){
 		if(actor.x + actor.width > actor2.x && actor.x < actor2.x + actor2.width &&
 			actor.y + actor.height > actor2.y && actor.y < actor2.y + actor2.height ){
 			return true;
@@ -44,5 +44,14 @@ public abstract class Enemy
 		}else{
 			return false;
 		}		
+	}
+
+	protected boolean CollisionEnemy(Enemy enemy, Enemy enemy2){
+		if(enemy.x + enemy.width > enemy2.x && enemy.x < enemy2.x + enemy2.width &&
+				enemy.y + enemy.height > enemy2.y && enemy.y < enemy2.y + enemy2.height){
+			return true;
+		}
+		else
+			return false;
 	}
 }

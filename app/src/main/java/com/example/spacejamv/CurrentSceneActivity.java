@@ -51,8 +51,8 @@ public class CurrentSceneActivity extends Activity implements SensorEventListene
 	public void onSensorChanged(SensorEvent event) 
 	{
 		// TODO Auto-generated method stub
-		 x = event.values[0];
-	     y = event.values[1];
+		 y = event.values[0];
+	     x = event.values[1];
 	     z = event.values[2];
 	}
 	

@@ -15,7 +15,7 @@ public class EnemyManager extends Actor{
 	public EnemyManager (Context c){
 		this.c = c;
 
-		enemies = new ArrayList<Enemy>();
+		enemies = new ArrayList<>();
 	}
 	
 	@Override
@@ -27,7 +27,7 @@ public class EnemyManager extends Actor{
 	}
 	
 	private void Spawn(){	
-		if(enemies.size() < 3){
+		if(enemies.size() < 1){
 			Random random = new Random();
 			random.nextDouble();
 //			if(random.nextDouble() > 0.5f){
@@ -50,7 +50,15 @@ public class EnemyManager extends Actor{
 		//for dos inimigos
 		for(int i = 0; i < enemies.size(); i++){
 			enemies.get(i).Update(ship);
-			
+
+//			if(Collision4(this, this)){
+//				this.y *= -1;
+//			}
+
+//			if(CollisionEnemy(enemies.get(i), enemies.get(i))){
+//				this.y *= -1;
+//			}
+
 			// Inimigos canto da tela
 			if(Collision3(enemies.get(i))){
 				enemies.remove(i);
