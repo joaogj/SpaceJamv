@@ -1,10 +1,10 @@
 #Internal package file, do not edit.
-#Sat Jun 23 22:00:23 BRT 2018
+#Tue Jul 03 02:18:47 BRT 2018
 1.base=C\:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 2.path=classes.dex
 0.baseType=DIRECTORY
 3.baseType=DIRECTORY
-2.base=C\:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+2.base=C\:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
 3.set=DEX
 2.set=DEX
 1.baseType=DIRECTORY
@@ -12,7 +12,7 @@
 count=4
 1.set=DEX
 0.path=classes.dex
-3.base=C\:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+3.base=C\:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
 0.set=DEX
 0.base=C\:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
 2.baseType=DIRECTORY

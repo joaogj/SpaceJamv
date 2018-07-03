@@ -49,7 +49,7 @@ public class Enemy_Shoter extends Enemy
 		else if(this.y < ship.y){
 			this.y += CurrentScene.screenH/400;
 		}
-		else if(this.y + (this.height * 2) > ship.y && this.y < ship.y + (ship.height * 2) ){
+		if(this.y + (this.height * 2) > ship.y && this.y < ship.y + (ship.height * 2) ){
 			if(shots.size() < 1){
 				shots.add(new Shot(this.x - this.width, (int) (this.y - this.height/3f), this.c));
 			}

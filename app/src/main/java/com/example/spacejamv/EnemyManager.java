@@ -27,7 +27,7 @@ public class EnemyManager extends Actor{
 	}
 	
 	private void Spawn(){	
-		if(enemies.size() < 1){
+		if(enemies.size() < 3){
 			Random random = new Random();
 			random.nextDouble();
 //			if(random.nextDouble() > 0.5f){

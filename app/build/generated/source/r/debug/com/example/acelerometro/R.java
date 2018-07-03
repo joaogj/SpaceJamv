@@ -1430,11 +1430,14 @@ public final class R {
     public static final int abc_textfield_search_activated_mtrl_alpha=0x7f060030;
     public static final int abc_textfield_search_default_mtrl_alpha=0x7f060031;
     public static final int abc_textfield_search_material=0x7f060032;
-    public static final int enemy0=0x7f060033;
-    public static final int enemy1=0x7f060034;
-    public static final int ic_launcher=0x7f060035;
-    public static final int ship=0x7f060036;
-    public static final int shot=0x7f060037;
+    public static final int bg=0x7f060033;
+    public static final int enemy0=0x7f060034;
+    public static final int enemy1=0x7f060035;
+    public static final int ic_launcher=0x7f060036;
+    public static final int life=0x7f060037;
+    public static final int power_cd=0x7f060038;
+    public static final int ship=0x7f060039;
+    public static final int shot=0x7f06003a;
   }
   public static final class id {
     public static final int action_bar=0x7f070000;

@@ -3,18 +3,15 @@ package com.example.spacejamv;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.acelerometro.R;
 
 import android.content.Context;
-import android.content.Intent;
-import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
-import android.graphics.Rect;
-import android.util.Log;
 import android.view.MotionEvent;
+
+import com.example.acelerometro.R;
 
 public class Ship extends Actor
 {
@@ -38,10 +35,13 @@ public class Ship extends Actor
 
 	private boolean canShot = true;
 
+	private Bitmap imgLife;
+
 	public Ship(int x, int y, Context c)
 	{
 		c.getResources();
 		shots = new ArrayList<>();
+		imgLife = new BitmapFactory().decodeResource(c.getResources(), R.drawable.life);
 		this.x = x;
 		this.y = y;
 		this.c = c;
@@ -55,7 +55,11 @@ public class Ship extends Actor
 	@Override
 	public void draw(Canvas canvas, Paint painter)
 	{
-		canvas.drawRect(new Rect(0 ,0, CurrentScene.screenW/15 * this.life, CurrentScene.screenH/15), painter);
+		for(int i = 0; i < this.life; i++){
+			canvas.drawBitmap(imgLife, CurrentScene.screenW/15 * i, CurrentScene.screenH/15, painter);
+		}
+
+		//canvas.drawRect(new Rect(0 ,0, CurrentScene.screenW/15 * this.life, CurrentScene.screenH/15), painter);
 		canvas.drawBitmap(img, this.x, this.y, painter);
 		
 		for(int i = 0; i < shots.size(); i++)
@@ -108,6 +112,6 @@ public class Ship extends Actor
 		}
 		
 		
-		this.y += speed ;//* CurrentScene.screenH/30;
+		this.y += speed ;
 	}
 }

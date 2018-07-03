@@ -1,6 +1,7 @@
 package com.example.spacejamv;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -11,6 +12,7 @@ public abstract class Scene{
 	
 	protected Context c;
 	protected Paint[] painter;
+	protected Bitmap img;
 	
 	
 	public Scene(Context c) {
@@ -19,11 +21,11 @@ public abstract class Scene{
 		this.painter = new Paint[4];
 		
 		this.painter[0] = new Paint();
-		this.painter[0].setColor(Color.BLACK);
+		this.painter[0].setColor(Color.WHITE);
 		this.painter[0].setTextSize(50);
 
 		this.painter[1] = new Paint();
-		this.painter[1].setColor(Color.RED);
+		this.painter[1].setColor(Color.WHITE);
 		this.painter[1].setTextSize(100);
 
 		/*this.painter[2] = new Paint();
