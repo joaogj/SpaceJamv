@@ -13,7 +13,6 @@ public class GameOver extends Scene{
 
 	public GameOver(Context c) {
 		super(c);
-		new BitmapFactory();
 		img = BitmapFactory.decodeResource(this.c.getResources(), R.drawable.bg);
         currentScene = new CurrentScene(c);
 	}
@@ -29,13 +28,9 @@ public class GameOver extends Scene{
 	@Override
 	protected void MotionEvent(android.view.MotionEvent event) {
 		int action = event.getAction();
-		
-		switch(action){
-		
-		case MotionEvent.ACTION_DOWN:
+		if (action == MotionEvent.ACTION_DOWN) {
 			currentScene.setCanInstantiate(true);
 			CurrentScene.changeScene = "menu";
-			break;
 		}
 	}
 
@@ -43,5 +38,4 @@ public class GameOver extends Scene{
 	protected void Update() {
 
 	}
-
 }

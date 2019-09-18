@@ -13,7 +13,6 @@ public class Menu extends Scene{
 
 	public Menu(Context c) {
 		super(c);
-		new BitmapFactory();
 		img = BitmapFactory.decodeResource(this.c.getResources(), R.drawable.bg);
 		currentScene = new CurrentScene(c);
 	}
@@ -31,15 +30,12 @@ public class Menu extends Scene{
 
 	@Override
 	protected void MotionEvent(android.view.MotionEvent event) {
-		// TODO Auto-generated method stub
-		
+
 		int action = event.getAction();
-		
-		switch(action){
-			case MotionEvent.ACTION_DOWN:
-				currentScene.setCanInstantiate(true);
-				CurrentScene.changeScene = "game";
-				break;
+
+		if (action == MotionEvent.ACTION_DOWN) {
+			currentScene.setCanInstantiate(true);
+			CurrentScene.changeScene = "game";
 		}
 	}
 

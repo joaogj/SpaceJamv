@@ -14,7 +14,7 @@ public class PowerUp extends Actor {
 
     private CurrentScene currentScene;
 
-    public PowerUp(int x, int y, Context c)
+    PowerUp(int x, int y, Context c)
     {
 
         c.getResources();
@@ -37,7 +37,7 @@ public class PowerUp extends Actor {
         canvas.drawBitmap(img, this.x, this.y, painter);
     }
 
-    public void Movement()
+    private void Movement()
     {
         this.x += speedX;
         this.y += speedY;
