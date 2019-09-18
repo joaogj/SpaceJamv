@@ -33,7 +33,7 @@ public class EnemyManager extends Actor{
 	private void spawn(){
 		if(enemies.size() < 3){
 			random.nextInt();
-			enemies.add(new EnemyShoter( (int) (currentScene.getScreenW()/1.2), (int) (currentScene.getScreenH() * random.nextDouble()), this.c));
+			enemies.add(new EnemyShoter( (int) (currentScene.getScreenW()/1.2), (currentScene.getScreenH() * random.nextInt()), this.c));
 		}
 	}
 	
