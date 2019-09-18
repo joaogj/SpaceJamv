@@ -1,18 +1,11 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w500dp-v13\\values-w500dp-v13.xml",
+            "outputFile": "/home/devops/Projetos/SpaceJamv/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w500dp-v13/values-w500dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Joao Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\60a2672d8eab07598cb635169824c730\\res\\values-w500dp\\values.xml",
+                    "source": "/home/devops/.gradle/caches/transforms-2/files-2.1/730c1ce620638492b0934a948d9e4027/res/values-w500dp-v13/values-w500dp-v13.xml",
                     "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "56",
-                        "endColumns": "54",
-                        "endOffsets": "106"
-                    },
-                    "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",

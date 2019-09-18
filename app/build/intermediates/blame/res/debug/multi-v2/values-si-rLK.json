@@ -1,23 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Joao Gabriel\\AndroidStudioProjects\\SpaceJamv\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-si-rLK\\values-si-rLK.xml",
+            "outputFile": "/home/devops/Projetos/SpaceJamv/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si-rLK/values-si-rLK.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Joao Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\60a2672d8eab07598cb635169824c730\\res\\values-si-rLK\\values.xml",
+                    "source": "/home/devops/.gradle/caches/transforms-2/files-2.1/730c1ce620638492b0934a948d9e4027/res/values-si-rLK/values-si-rLK.xml",
                     "from": {
-                        "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "56,166,274,397,504,611,699,804,920,1029,1134,1232,1342,1441,1547",
-                        "endColumns": "109,107,122,106,106,87,104,115,108,104,97,109,98,105,120",
-                        "endOffsets": "161,269,392,499,606,694,799,915,1024,1129,1227,1337,1436,1542,1663"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,165,273,396,503,610,698,803,919,1028,1133,1231,1341,1440,1546",
-                        "endColumns": "109,107,122,106,106,87,104,115,108,104,97,109,98,105,120",
-                        "endOffsets": "160,268,391,498,605,693,798,914,1023,1128,1226,1336,1435,1541,1662"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,165,273,396,503,610,698,803,919,1008,1095,1179,1288,1393,1491,1601,1700,1806,1927,2026",
+                        "endColumns": "109,107,122,106,106,87,104,115,88,86,83,108,104,97,109,98,105,120,98,100",
+                        "endOffsets": "160,268,391,498,605,693,798,914,1003,1090,1174,1283,1388,1486,1596,1695,1801,1922,2021,2122"
                     }
                 }
             ]
