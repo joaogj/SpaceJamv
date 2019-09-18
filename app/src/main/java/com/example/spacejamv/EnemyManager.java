@@ -11,6 +11,7 @@ import android.graphics.Paint;
 public class EnemyManager extends Actor{
 	
 	private List<Enemy> enemies;
+	private Random random = new Random();
 
 	public EnemyManager (Context c){
 		this.c = c;
@@ -28,7 +29,6 @@ public class EnemyManager extends Actor{
 	
 	private void Spawn(){	
 		if(enemies.size() < 3){
-			Random random = new Random();
 			random.nextDouble();
 //			if(random.nextDouble() > 0.5f){
 //				enemies.add(new Enemy_Follower((int) (CurrentScene.screenW/1.2f + ( CurrentScene.screenW/6 * enemies.size())),
@@ -93,8 +93,6 @@ public class EnemyManager extends Actor{
 					ship.setScore(ship.getScore()+1);
 					break;
 				}
-				
-				break;
 			}
 		}
 	}

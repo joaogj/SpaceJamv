@@ -56,7 +56,7 @@ public class Ship extends Actor
 	public void draw(Canvas canvas, Paint painter)
 	{
 		for(int i = 0; i < this.life; i++){
-			canvas.drawBitmap(imgLife, CurrentScene.screenW/15 * i, CurrentScene.screenH/15, painter);
+			canvas.drawBitmap(imgLife, CurrentScene.screenW/15.0f * i, CurrentScene.screenH/15.0f, painter);
 		}
 
 		//canvas.drawRect(new Rect(0 ,0, CurrentScene.screenW/15 * this.life, CurrentScene.screenH/15), painter);
@@ -66,7 +66,7 @@ public class Ship extends Actor
 		{
 			shots.get(i).draw(canvas, painter);
 		}
-		canvas.drawText("Score : ", CurrentScene.screenW/2, 0, painter);
+		canvas.drawText("Score : ", CurrentScene.screenW/2.0f, 0, painter);
 	}
 	
 	protected void MotionEvent(MotionEvent event)
@@ -108,7 +108,7 @@ public class Ship extends Actor
 		
 		for(int i = 0; i < shots.size(); i++)
 		{
-			shots.get(i).Update(CurrentScene.screenH/100);
+			shots.get(i).Update(CurrentScene.screenH/100.0f);
 		}
 		
 		

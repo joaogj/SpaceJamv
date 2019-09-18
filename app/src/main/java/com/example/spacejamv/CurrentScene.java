@@ -39,7 +39,7 @@ public class CurrentScene extends View implements Runnable
 		
 		paint = new Paint();
 		paint.setColor(Color.RED);
-		paint.setTextSize(screenW/5);
+		paint.setTextSize(screenW/5.0f);
 		
 		handler = new Handler();
 		handler.post(this);
