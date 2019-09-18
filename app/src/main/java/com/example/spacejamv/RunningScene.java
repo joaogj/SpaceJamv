@@ -1,7 +1,6 @@
 package com.example.spacejamv;
 
 import android.graphics.Canvas;
-import android.util.Log;
 import android.view.MotionEvent;
 
 public class RunningScene
@@ -15,7 +14,7 @@ public class RunningScene
 	
 	public boolean motionEvent(MotionEvent event)
 	{	
-		this.scene.MotionEvent(event);
+		this.scene.motionEvent(event);
 
 		return true;
 	}
@@ -27,7 +26,7 @@ public class RunningScene
 	
 	public void update()
 	{
-		this.scene.Update();
+		this.scene.update();
 	}
 	
 }

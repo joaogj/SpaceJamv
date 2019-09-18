@@ -57,7 +57,6 @@ public class Ship extends Actor
 	{
 		c.getResources();
 		shots = new ArrayList<>();
-		new BitmapFactory();
 		imgLife = BitmapFactory.decodeResource(c.getResources(), R.drawable.life);
 		this.x = x;
 		this.y = y;
@@ -93,11 +92,9 @@ public class Ship extends Actor
 	{
 		int action = event.getAction();
 
-		if(canShot){
-            if (action == MotionEvent.ACTION_DOWN) {
-                shots.add(new Shot(this.x + this.width, (int) (this.y + this.height / 3f), this.c));
-                setCanShot(false);
-            }
+		if(canShot && action == MotionEvent.ACTION_DOWN) {
+			shots.add(new Shot(this.x + this.width, (int) (this.y + this.height / 3f), this.c));
+			setCanShot(false);
 		}
 	}
 	
@@ -126,7 +123,7 @@ public class Ship extends Actor
 		
 		for(int i = 0; i < shots.size(); i++)
 		{
-			shots.get(i).Update(currentScene.getScreenH()/100.0f);
+			shots.get(i).update(currentScene.getScreenH()/100.0f);
 		}
 		
 		

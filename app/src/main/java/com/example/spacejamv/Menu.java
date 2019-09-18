@@ -28,7 +28,7 @@ public class Menu extends Scene{
 	}
 
 	@Override
-	protected void MotionEvent(android.view.MotionEvent event) {
+	protected void motionEvent(android.view.MotionEvent event) {
 
 		int action = event.getAction();
 
@@ -39,7 +39,8 @@ public class Menu extends Scene{
 	}
 
 	@Override
-	protected void Update() {
+	protected void update() {
+	    //método implementado devido a herança da classe abstrata Scene
 	}
 
 }

@@ -40,12 +40,12 @@ public class Game extends Scene
 	}
 
 	@Override
-	protected void MotionEvent(android.view.MotionEvent event) {
+	protected void motionEvent(android.view.MotionEvent event) {
 		ship.motionEvent(event);
 	}
 
 	@Override
-	protected void Update() {
+	protected void update() {
 		this.ship.update((float) (currentSceneActivity.getY() * 1.5));
 		power.update(ship);
 		enemyManager.update(ship);

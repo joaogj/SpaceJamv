@@ -31,9 +31,9 @@ public abstract class Scene{
 	
 	protected abstract void draw (Canvas canvas);
 	
-	protected abstract void MotionEvent(MotionEvent event);
+	protected abstract void motionEvent(MotionEvent event);
 	
-	protected abstract void Update();
+	protected abstract void update();
 	
 	protected void drawCenter(Canvas canvas, Paint paint, String text) {
         int cHeight = canvas.getClipBounds().height();

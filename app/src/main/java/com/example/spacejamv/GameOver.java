@@ -27,7 +27,7 @@ public class GameOver extends Scene{
 
 	//verifica o toque na tela para fazer a transição de cena para o menu
 	@Override
-	protected void MotionEvent(android.view.MotionEvent event) {
+	protected void motionEvent(android.view.MotionEvent event) {
 		int action = event.getAction();
 		if (action == MotionEvent.ACTION_DOWN) {
 			currentScene.setCanInstantiate(true);
@@ -36,7 +36,7 @@ public class GameOver extends Scene{
 	}
 
 	@Override
-	protected void Update() {
-
+	protected void update() {
+		//método implementado devido a herança da classe abstrata Scene
 	}
 }

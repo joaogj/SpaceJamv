@@ -32,7 +32,7 @@ public class EnemyManager extends Actor{
 	//função que chama novas waves de inimigos
 	private void spawn(){
 		if(enemies.size() < 3){
-			random.nextDouble();
+			random.nextInt();
 			enemies.add(new EnemyShoter( (int) (currentScene.getScreenW()/1.2), (int) (currentScene.getScreenH() * random.nextDouble()), this.c));
 		}
 	}

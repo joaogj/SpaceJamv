@@ -52,7 +52,7 @@ public class EnemyShoter extends Enemy
 
 		for(int i = 0; i < shots.size(); i++)
 		{
-			shots.get(i).Update(- currentScene.getScreenH()/80.0f);
+			shots.get(i).update(- currentScene.getScreenH()/80.0f);
 			
 			if(ship.collision4(ship, shots.get(i))){
 				shots.remove(i);

@@ -27,7 +27,7 @@ public class Shot extends Actor
 	}
 
 	//atualização do tiro, com a movimentação incrementando o x com a variável speed
-	public void Update(float speed)
+	public void update(float speed)
 	{
 		//movement
 		this.x += speed;

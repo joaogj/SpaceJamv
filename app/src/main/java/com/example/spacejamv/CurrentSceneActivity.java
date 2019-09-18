@@ -70,7 +70,8 @@ public class CurrentSceneActivity extends Activity implements SensorEventListene
 	@Override
 	public void onAccuracyChanged(Sensor arg0, int arg1) 
 	{
-
+        //método implementado devido a interface do sensor do acelerômetro.
+        //não será usada nesse contexto
 	}
 
 	//atualiza as direções baseada no sensor

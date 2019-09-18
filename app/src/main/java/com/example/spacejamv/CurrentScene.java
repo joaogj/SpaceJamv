@@ -109,6 +109,9 @@ public class CurrentScene extends View implements Runnable
 					runningScene = new RunningScene(new GameOver(c));
 					canInstantiate = false;
 				break;
+				default:
+					runningScene = new RunningScene(new Menu(c));
+					canInstantiate = false;
 			}
 		}
 		
