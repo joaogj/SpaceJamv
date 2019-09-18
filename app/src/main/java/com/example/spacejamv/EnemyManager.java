@@ -76,21 +76,21 @@ public class EnemyManager extends Actor{
 			}
 			
 			// for dos tiros da nave
-			for(int j = 0; j < ship.shots.size(); j++){
+			for(int j = 0; j < ship.getShots().size(); j++){
 
 				//ship.isCanShot();
 				
 				// colisao tiros da nave e tela
-				if(Collision5(ship.shots.get(j))){
-					ship.shots.remove(j);
+				if(Collision5(ship.getShots().get(j))){
+					ship.getShots().remove(j);
 					ship.setCanShot(true);
 					break;
 				}
 				
 				// tiros da nave principal com inimigos
-				if(Collision1(ship.shots.get(j), enemies.get(i))){
+				if(Collision1(ship.getShots().get(j), enemies.get(i))){
 					enemies.remove(i);
-					ship.shots.remove(j);
+					ship.getShots().remove(j);
 					ship.setCanShot(true);
 					ship.setScore(ship.getScore()+1);
 					break;

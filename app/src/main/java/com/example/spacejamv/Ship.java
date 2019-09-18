@@ -15,9 +15,25 @@ import com.example.acelerometro.R;
 
 public class Ship extends Actor
 {
-	public List<Shot> shots;
+	public List<Shot> getShots() {
+		return shots;
+	}
+
+	public void setShots(List<Shot> shots) {
+		this.shots = shots;
+	}
+
+	private List<Shot> shots;
 	private CurrentScene currentScene;
-	public Record record;
+	private Record record;
+
+	public Record getRecord() {
+		return record;
+	}
+
+	public void setRecord(Record record) {
+		this.record = record;
+	}
 
 	public int getScore() {return score;}
 
@@ -62,7 +78,6 @@ public class Ship extends Actor
 			canvas.drawBitmap(imgLife, currentScene.getScreenW()/15.0f * i, currentScene.getScreenH()/15.0f, painter);
 		}
 
-		//canvas.drawRect(new Rect(0 ,0, CurrentScene.screenW/15 * this.life, CurrentScene.screenH/15), painter);
 		canvas.drawBitmap(img, this.x, this.y, painter);
 		
 		for(int i = 0; i < shots.size(); i++)
@@ -106,7 +121,7 @@ public class Ship extends Actor
 		if(life <= 0){
 			this.record.SaveRecord(score);
 			currentScene.setCanInstantiate(true);
-			CurrentScene.changeScene = "gameover";
+			currentScene.setChangeScene("gameover");
 		}
 		
 		for(int i = 0; i < shots.size(); i++)

@@ -30,7 +30,7 @@ public class GameOver extends Scene{
 		int action = event.getAction();
 		if (action == MotionEvent.ACTION_DOWN) {
 			currentScene.setCanInstantiate(true);
-			CurrentScene.changeScene = "menu";
+			currentScene.setChangeScene("menu");
 		}
 	}
 

@@ -14,11 +14,13 @@ public class Game extends Scene
 	private EnemyManager EnemyManager;
 	private PowerUp power;
 	private CurrentScene currentScene;
+	private CurrentSceneActivity currentSceneActivity;
 
 
 	Game(Context c) {
 		super(c);
 		currentScene = new CurrentScene(c);
+		currentSceneActivity = new CurrentSceneActivity();
 		new BitmapFactory();
 		img = BitmapFactory.decodeResource(this.c.getResources(), R.drawable.bg);
 		ship = new Ship(0, currentScene.getScreenH()/2, this.c);
@@ -34,7 +36,7 @@ public class Game extends Scene
 		power.draw(canvas, painter[1]);
 		EnemyManager.draw(canvas, painter[1]);
 
-		canvas.drawText("Record: " + ship.record.getRecordString(), (float) (currentScene.getScreenW()/1.4), (currentScene.getScreenH()/13.0f), painter[0]);
+		canvas.drawText("Record: " + ship.getRecord().getRecordString(), (float) (currentScene.getScreenW()/1.4), (currentScene.getScreenH()/13.0f), painter[0]);
 		canvas.drawText("Score: " + ship.getScore(), (float) (currentScene.getScreenW()/1.4), (currentScene.getScreenH()/7.0f), painter[0]);
 
 	}
@@ -46,7 +48,7 @@ public class Game extends Scene
 
 	@Override
 	protected void Update() {
-		this.ship.Update((float) (CurrentSceneActivity.y * 1.5));
+		this.ship.Update((float) (currentSceneActivity.getY() * 1.5));
 		power.Update(ship);
 		EnemyManager.Update(ship);
 	}

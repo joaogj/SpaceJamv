@@ -35,7 +35,7 @@ public class Menu extends Scene{
 
 		if (action == MotionEvent.ACTION_DOWN) {
 			currentScene.setCanInstantiate(true);
-			CurrentScene.changeScene = "game";
+			currentScene.setChangeScene("game");
 		}
 	}
 

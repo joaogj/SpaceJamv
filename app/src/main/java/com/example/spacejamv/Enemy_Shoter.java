@@ -12,7 +12,7 @@ import android.graphics.Paint;
 
 public class Enemy_Shoter extends Enemy
 {
-	public List<Shot> shots;
+	private List<Shot> shots;
 	private CurrentScene currentScene = new CurrentScene(c);
 
 	public Enemy_Shoter(int x, int y, Context c)
@@ -21,13 +21,12 @@ public class Enemy_Shoter extends Enemy
 		this.x = x;
 		this.y = y;
 		this.c = c;
-		new BitmapFactory();
 		this.img = BitmapFactory.decodeResource(this.c.getResources(), R.drawable.enemy1);
 		this.height = img.getHeight();
 		this.width = img.getWidth();
 	}
 	
-	public List<Shot> getShots (){
+	private List<Shot> getShots (){
 		return shots;
 	}
 	

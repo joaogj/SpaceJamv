@@ -16,10 +16,11 @@ public class CurrentScene extends View implements Runnable
 	private Context c;
 	private int screenW;
 	private int screenH;
+
 	private RunningScene runningScene;
 	
 	private boolean canInstantiate ;
-	public static String changeScene = "menu";
+	private String changeScene = "menu";
 
 	public void setCanInstantiate(boolean canInstantiate) {
 		this.canInstantiate = canInstantiate;
@@ -43,6 +44,14 @@ public class CurrentScene extends View implements Runnable
 
 	public void setScreenH(int screenH) {
 		this.screenH = screenH;
+	}
+
+	public String getChangeScene() {
+		return changeScene;
+	}
+
+	public void setChangeScene(String changeScene) {
+		this.changeScene = changeScene;
 	}
 
 	public CurrentScene(Context context)
@@ -82,26 +91,21 @@ public class CurrentScene extends View implements Runnable
 	
 	private void update()
 	{
-		//Log.d("WIDTH", String.valueOf(screenW));
-		//Log.d("HEIGHT", String.valueOf(screenH));
 
 		if(canInstantiate){
 			switch(changeScene){
 			
 				case "menu":
 					runningScene = new RunningScene(new Menu(c));
-					//Log.d("switch", "switch " + changeScene);
 					canInstantiate = false;
 				break;
 				case "game":
 					runningScene = new RunningScene(new Game(c));
-					//Log.d("switch", "switch " + changeScene);
 					canInstantiate = false;
 				break;
 				
 				case "gameover":
 					runningScene = new RunningScene(new GameOver(c));
-					//Log.d("switch", "switch " + changeScene);
 					canInstantiate = false;
 				break;
 			}

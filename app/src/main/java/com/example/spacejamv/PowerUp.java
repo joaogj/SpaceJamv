@@ -62,9 +62,9 @@ public class PowerUp extends Actor {
 
     public void Update(Ship ship){
 
-        for(int i = 0; i < ship.shots.size(); i++)
+        for(int i = 0; i < ship.getShots().size(); i++)
         {
-            if(Collision4(this, ship.shots.get(i)))
+            if(Collision4(this, ship.getShots().get(i)))
             {
                 ship.setCanShot(true);
             }
