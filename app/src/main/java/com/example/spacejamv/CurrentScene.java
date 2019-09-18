@@ -78,7 +78,7 @@ public class CurrentScene extends View implements Runnable
 	@Override
 	public boolean onTouchEvent(MotionEvent event)
 	{			 
-		runningScene.MotionEvent(event);
+		runningScene.motionEvent(event);
 		return true;
 	}
 	
@@ -111,7 +111,7 @@ public class CurrentScene extends View implements Runnable
 			}
 		}
 		
-		runningScene.Update();
+		runningScene.update();
 	}
 	
 	public void run()

@@ -62,7 +62,6 @@ public class Ship extends Actor
 		this.x = x;
 		this.y = y;
 		this.c = c;
-		new BitmapFactory();
 		this.img = BitmapFactory.decodeResource(c.getResources(), R.drawable.ship);
 		this.height = img.getHeight();
 		this.width = img.getWidth();
@@ -87,22 +86,19 @@ public class Ship extends Actor
 		canvas.drawText("Score : ", currentScene.getScreenW()/2.0f, 0, painter);
 	}
 	
-	protected void MotionEvent(MotionEvent event)
+	protected void motionEvent(MotionEvent event)
 	{
 		int action = event.getAction();
 
 		if(canShot){
-			switch(action)
-			{
-				case MotionEvent.ACTION_DOWN:
-					shots.add(new Shot(this.x + this.width, (int) (this.y + this.height/3f), this.c));
-					setCanShot(false);
-					break;
-			}
+            if (action == MotionEvent.ACTION_DOWN) {
+                shots.add(new Shot(this.x + this.width, (int) (this.y + this.height / 3f), this.c));
+                setCanShot(false);
+            }
 		}
 	}
 	
-	public void Collision()
+	public void collision()
 	{
 		if( this.y > currentScene.getScreenH() - (this.height * 1.5f))
 		{
@@ -114,12 +110,12 @@ public class Ship extends Actor
 		}
 	}
 	
-	public void Update(float speed)
+	public void update(float speed)
 	{
-		Collision();
+		collision();
 		
 		if(life <= 0){
-			this.record.SaveRecord(score);
+			this.record.saveRecord(score);
 			currentScene.setCanInstantiate(true);
 			currentScene.setChangeScene("gameover");
 		}

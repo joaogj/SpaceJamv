@@ -8,8 +8,6 @@ import android.graphics.Rect;
 
 import com.example.acelerometro.R;
 
-import java.util.ArrayList;
-
 public class PowerUp extends Actor {
 
     private CurrentScene currentScene;
@@ -23,7 +21,6 @@ public class PowerUp extends Actor {
         this.speedX = 3;
         this.speedY = 3;
         this.c = c;
-        new BitmapFactory();
         this.img = BitmapFactory.decodeResource(this.c.getResources(), R.drawable.power_cd);
         this.height = img.getHeight();
         this.width = img.getWidth();
@@ -37,13 +34,13 @@ public class PowerUp extends Actor {
         canvas.drawBitmap(img, this.x, this.y, painter);
     }
 
-    private void Movement()
+    private void movement()
     {
         this.x += speedX;
         this.y += speedY;
     }
 
-    public void Collision()
+    public void collision()
     {
         if(this.y > currentScene.getScreenH() - (this.height * 1.5f) || this.y < 0)
         {
@@ -60,18 +57,18 @@ public class PowerUp extends Actor {
 
     }
 
-    public void Update(Ship ship){
+    public void update(Ship ship){
 
         for(int i = 0; i < ship.getShots().size(); i++)
         {
-            if(Collision4(this, ship.getShots().get(i)))
+            if(collision4(this, ship.getShots().get(i)))
             {
                 ship.setCanShot(true);
             }
         }
 
 
-        Movement();
-        Collision();
+        movement();
+        collision();
     }
 }

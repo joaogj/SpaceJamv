@@ -10,12 +10,12 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 
-public class Enemy_Shoter extends Enemy
+public class EnemyShoter extends Enemy
 {
 	private List<Shot> shots;
 	private CurrentScene currentScene = new CurrentScene(c);
 
-	public Enemy_Shoter(int x, int y, Context c)
+	public EnemyShoter(int x, int y, Context c)
 	{		
 		shots = new ArrayList<>();
 		this.x = x;
@@ -25,11 +25,7 @@ public class Enemy_Shoter extends Enemy
 		this.height = img.getHeight();
 		this.width = img.getWidth();
 	}
-	
-	private List<Shot> getShots (){
-		return shots;
-	}
-	
+
 	@Override
 	public void draw(Canvas canvas, Paint painter)
 	{
@@ -58,15 +54,13 @@ public class Enemy_Shoter extends Enemy
 		{
 			shots.get(i).Update(- currentScene.getScreenH()/80.0f);
 			
-			if(ship.Collision4(ship, shots.get(i))){
+			if(ship.collision4(ship, shots.get(i))){
 				shots.remove(i);
 				ship.life--;
-				break;
 			}
 			
-			if(ship.Collision5(shots.get(i))){
+			if(ship.collision5(shots.get(i))){
 				shots.remove(i);
-				break;
 			}
 		}
 	}

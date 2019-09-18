@@ -12,15 +12,8 @@ public class Record {
 		this.c = c;
 	}
 	
-	/*SharedPreferences userDetails = context.getSharedPreferences("userdetails", MODE_PRIVATE);
-	Editor edit = userDetails.edit();
-	edit.clear();
-	edit.putString("username", txtUname.getText().toString().trim());
-	edit.putString("password", txtPass.getText().toString().trim());
-	edit.commit();*/
-	
-	public void SaveRecord(int newScore){ 
-		if(newScore > Read()){
+	public void saveRecord(int newScore){
+		if(newScore > read()){
 			SharedPreferences prefs = c.getSharedPreferences("records", Context.MODE_PRIVATE);
 			
 			Editor edit = prefs.edit();
@@ -29,13 +22,13 @@ public class Record {
 		}
     }
 
-	private int Read(){
+	private int read(){
     	SharedPreferences prefs = c.getSharedPreferences("records", Context.MODE_PRIVATE);
     	return prefs.getInt("score", 0);
     }
 	
 	public String getRecordString(){
-		return Integer.toString(Read()); 
+		return Integer.toString(read());
 	}
 	
 }

@@ -20,7 +20,6 @@ public class Menu extends Scene{
 	@Override
 	protected void draw(Canvas canvas) {
 
-		//canvas.drawText("MENU", CurrentScene.screenW/2 - painter.getTextSize(), CurrentScene.screenH/2, painter);
 		canvas.drawBitmap(img, 0, 0, painter[0]);
 		drawCenter(canvas, painter[1], "JOGAR");
 		canvas.drawText("João Gabriel", 0, (float) (currentScene.getScreenH()/1.6), painter[0]);

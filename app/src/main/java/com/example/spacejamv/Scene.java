@@ -27,12 +27,6 @@ public abstract class Scene{
 		this.painter[1] = new Paint();
 		this.painter[1].setColor(Color.WHITE);
 		this.painter[1].setTextSize(100);
-
-		/*this.painter[2] = new Paint();
-		this.painter[2].setColor(Color.GREEN);
-		
-		this.painter[3] = new Paint();
-		this.painter[3].setColor(Color.BLUE);*/
 	}
 	
 	protected abstract void draw (Canvas canvas);
