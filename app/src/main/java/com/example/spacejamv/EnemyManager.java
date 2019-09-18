@@ -13,6 +13,7 @@ public class EnemyManager extends Actor{
 	
 	private List<Enemy> enemies;
 	private Random random = new SecureRandom();
+	private CurrentScene currentScene = new CurrentScene(c);
 
 	public EnemyManager (Context c){
 		this.c = c;
@@ -39,7 +40,7 @@ public class EnemyManager extends Actor{
 //				(int) (CurrentScene.screenH * random.nextDouble()), this.c));
 //			}
 
-			enemies.add(new Enemy_Shoter( (int) (CurrentScene.screenW/1.2), (int) (CurrentScene.screenH * random.nextDouble()), this.c));
+			enemies.add(new Enemy_Shoter( (int) (currentScene.getScreenW()/1.2), (int) (currentScene.getScreenH() * random.nextDouble()), this.c));
 		}
 	}
 	

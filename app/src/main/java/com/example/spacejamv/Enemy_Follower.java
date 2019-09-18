@@ -11,13 +11,16 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 
 public class Enemy_Follower extends Enemy
-{	
+{
+	private CurrentScene currentScene = new CurrentScene(c);
+
 	public Enemy_Follower(int x, int y, Context c)
 	{		
 		this.x = x;
 		this.y = y;
 		this.c = c;
-		this.img = new BitmapFactory().decodeResource(this.c.getResources(), R.drawable.enemy0);
+		new BitmapFactory();
+		this.img = BitmapFactory.decodeResource(this.c.getResources(), R.drawable.enemy0);
 		this.height = img.getHeight();
 		this.width = img.getWidth();
 	}
@@ -32,13 +35,13 @@ public class Enemy_Follower extends Enemy
 	public void Update(Ship ship){
 		
 		//movement
-		this.x -= CurrentScene.screenW/1150 * (ship.getScore()/10 + 1);
+		this.x -= currentScene.getScreenW()/1150 * (ship.getScore()/10 + 1);
 		
 		if(this.y > ship.y){
-			this.y -= CurrentScene.screenH/400;
+			this.y -= currentScene.getScreenH()/400;
 		}
 		else if(this.y < ship.y){
-			this.y += CurrentScene.screenH/400;
+			this.y += currentScene.getScreenH()/400;
 		}
 	}
 }

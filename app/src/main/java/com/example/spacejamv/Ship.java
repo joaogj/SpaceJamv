@@ -16,7 +16,7 @@ import com.example.acelerometro.R;
 public class Ship extends Actor
 {
 	public List<Shot> shots;
-	
+	private CurrentScene currentScene;
 	public Record record;
 
 	public int getScore() {return score;}
@@ -52,13 +52,14 @@ public class Ship extends Actor
 		this.width = img.getWidth();
 		this.life = 3;
 		this.record = new Record(c);
+		currentScene = new CurrentScene(c);
 	}
 	
 	@Override
 	public void draw(Canvas canvas, Paint painter)
 	{
 		for(int i = 0; i < this.life; i++){
-			canvas.drawBitmap(imgLife, CurrentScene.screenW/15.0f * i, CurrentScene.screenH/15.0f, painter);
+			canvas.drawBitmap(imgLife, currentScene.getScreenW()/15.0f * i, currentScene.getScreenH()/15.0f, painter);
 		}
 
 		//canvas.drawRect(new Rect(0 ,0, CurrentScene.screenW/15 * this.life, CurrentScene.screenH/15), painter);
@@ -68,7 +69,7 @@ public class Ship extends Actor
 		{
 			shots.get(i).draw(canvas, painter);
 		}
-		canvas.drawText("Score : ", CurrentScene.screenW/2.0f, 0, painter);
+		canvas.drawText("Score : ", currentScene.getScreenW()/2.0f, 0, painter);
 	}
 	
 	protected void MotionEvent(MotionEvent event)
@@ -88,9 +89,9 @@ public class Ship extends Actor
 	
 	public void Collision()
 	{
-		if( this.y > CurrentScene.screenH - (this.height * 1.5f))
+		if( this.y > currentScene.getScreenH() - (this.height * 1.5f))
 		{
-			this.y = (int) (CurrentScene.screenH - (this.height * 1.5f));
+			this.y = (int) (currentScene.getScreenH() - (this.height * 1.5f));
 		}
 		else if( this.y < 0)
 		{
@@ -104,13 +105,13 @@ public class Ship extends Actor
 		
 		if(life <= 0){
 			this.record.SaveRecord(score);
-			CurrentScene.canInstantiate = true;
+			currentScene.setCanInstantiate(true);
 			CurrentScene.changeScene = "gameover";
 		}
 		
 		for(int i = 0; i < shots.size(); i++)
 		{
-			shots.get(i).Update(CurrentScene.screenH/100.0f);
+			shots.get(i).Update(currentScene.getScreenH()/100.0f);
 		}
 		
 		

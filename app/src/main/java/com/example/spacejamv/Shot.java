@@ -15,7 +15,8 @@ public class Shot extends Actor
 		this.x = x;
 		this.y = y;
 		this.c = c;
-		this.img = new BitmapFactory().decodeResource(this.c.getResources(), R.drawable.shot);
+		new BitmapFactory();
+		this.img = BitmapFactory.decodeResource(this.c.getResources(), R.drawable.shot);
 		this.height = img.getHeight();
 		this.width = img.getWidth();
 	}

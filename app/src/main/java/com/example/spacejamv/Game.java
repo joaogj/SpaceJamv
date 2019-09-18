@@ -13,15 +13,16 @@ public class Game extends Scene
 	private Ship ship;
 	private EnemyManager EnemyManager;
 	private PowerUp power;
+	private CurrentScene currentScene;
 
 
 	public Game(Context c) {
 		super(c);
-
+		currentScene = new CurrentScene(c);
 		img = new BitmapFactory().decodeResource(this.c.getResources(), R.drawable.bg);
-		ship = new Ship(0, CurrentScene.screenH/2, this.c);
+		ship = new Ship(0, currentScene.getScreenH()/2, this.c);
 		EnemyManager = new EnemyManager(this.c);
-		power = new PowerUp(CurrentScene.screenW/2, CurrentScene.screenH/2, this.c);
+		power = new PowerUp(currentScene.getScreenW()/2, currentScene.getScreenH()/2, this.c);
 
 	}
 
@@ -33,8 +34,8 @@ public class Game extends Scene
 		power.draw(canvas, painter[1]);
 		EnemyManager.draw(canvas, painter[1]);
 
-		canvas.drawText("Record: " + ship.record.getRecordString(), (float) (CurrentScene.screenW/1.4), (float) (CurrentScene.screenH/13.0f), painter[0]);
-		canvas.drawText("Score: " + Integer.toString(ship.getScore()), (float) (CurrentScene.screenW/1.4), (float) (CurrentScene.screenH/7.0f), painter[0]);
+		canvas.drawText("Record: " + ship.record.getRecordString(), (float) (currentScene.getScreenW()/1.4), (float) (currentScene.getScreenH()/13.0f), painter[0]);
+		canvas.drawText("Score: " + Integer.toString(ship.getScore()), (float) (currentScene.getScreenW()/1.4), (float) (currentScene.getScreenH()/7.0f), painter[0]);
 
 	}
 

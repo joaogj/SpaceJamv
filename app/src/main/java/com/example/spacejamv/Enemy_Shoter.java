@@ -13,6 +13,7 @@ import android.graphics.Paint;
 public class Enemy_Shoter extends Enemy
 {
 	public List<Shot> shots;
+	private CurrentScene currentScene = new CurrentScene(c);
 
 	public Enemy_Shoter(int x, int y, Context c)
 	{		
@@ -45,10 +46,10 @@ public class Enemy_Shoter extends Enemy
 	public void Update(Ship ship){
 				
 		if(this.y > ship.y){
-			this.y -= CurrentScene.screenH/400;
+			this.y -= currentScene.getScreenH()/400;
 		}
 		else if(this.y < ship.y){
-			this.y += CurrentScene.screenH/400;
+			this.y += currentScene.getScreenH()/400;
 		}
 		if(this.y + (this.height * 2) > ship.y && this.y < ship.y + (ship.height * 2) && shots.isEmpty()){
 			shots.add(new Shot(this.x - this.width, (int) (this.y - this.height / 3f), this.c));
@@ -56,7 +57,7 @@ public class Enemy_Shoter extends Enemy
 
 		for(int i = 0; i < shots.size(); i++)
 		{
-			shots.get(i).Update(-CurrentScene.screenH/80.0f);
+			shots.get(i).Update(- currentScene.getScreenH()/80.0f);
 			
 			if(ship.Collision4(ship, shots.get(i))){
 				shots.remove(i);

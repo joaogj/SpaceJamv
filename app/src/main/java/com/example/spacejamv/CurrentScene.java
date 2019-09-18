@@ -12,31 +12,53 @@ import android.view.View;
 public class CurrentScene extends View implements Runnable
 {
 
-	public static int screenW;
-	public static int screenH;
-
 	private Handler handler;
 	private Context c;
-
+	private int screenW;
+	private int screenH;
 	private RunningScene runningScene;
 	
-	public static boolean canInstantiate = true;
+	private boolean canInstantiate ;
 	public static String changeScene = "menu";
-	
+
+	public void setCanInstantiate(boolean canInstantiate) {
+		this.canInstantiate = canInstantiate;
+	}
+
+	public boolean isCanInstantiate() {
+		return canInstantiate;
+	}
+
+	public void setScreenW(int screenW) {
+		this.screenW = screenW;
+	}
+
+	public int getScreenW() {
+		return screenW;
+	}
+
+	public int getScreenH() {
+		return screenH;
+	}
+
+	public void setScreenH(int screenH) {
+		this.screenH = screenH;
+	}
+
 	public CurrentScene(Context context)
 	{
 		super(context);
-				
-		screenW = context.getResources().getDisplayMetrics().widthPixels;
-		screenH = context.getResources().getDisplayMetrics().heightPixels;
-		
+
+		setScreenW(context.getResources().getDisplayMetrics().widthPixels);
+		setScreenH(context.getResources().getDisplayMetrics().heightPixels);
+		setCanInstantiate(true);
 		setBackgroundColor(Color.WHITE);
 		
 		c = context;
 
 		Paint paint = new Paint();
 		paint.setColor(Color.RED);
-		paint.setTextSize(screenW/5.0f);
+		paint.setTextSize(screenW /5.0f);
 		
 		handler = new Handler();
 		handler.post(this);

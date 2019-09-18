@@ -1,7 +1,5 @@
 package com.example.spacejamv;
 
-import java.util.List;
-
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -12,6 +10,7 @@ public abstract class Enemy
 	protected Bitmap img;
 	protected int x, y, height, width;
 	protected Context c;
+	private CurrentScene currentScene = new CurrentScene(c);
 //	protected List<Shot> shots;
 
 	protected abstract void draw(Canvas canvas,Paint painter);
@@ -30,8 +29,8 @@ public abstract class Enemy
 	}	
 	
 	protected boolean Collision2(Actor actor){
-		if(actor.x < 0 || actor.x + actor.width > CurrentScene.screenW  ||
-				actor.y < 0 || actor.y + actor.height > CurrentScene.screenH ){
+		if(actor.x < 0 || actor.x + actor.width > currentScene.getScreenW()  ||
+				actor.y < 0 || actor.y + actor.height > currentScene.getScreenH() ){
 			return true;
 		}else{
 			return false;

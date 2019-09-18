@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 public class PowerUp extends Actor {
 
+    private CurrentScene currentScene;
 
     public PowerUp(int x, int y, Context c)
     {
@@ -22,15 +23,17 @@ public class PowerUp extends Actor {
         this.speedX = 3;
         this.speedY = 3;
         this.c = c;
-        this.img = new BitmapFactory().decodeResource(this.c.getResources(), R.drawable.power_cd);
+        new BitmapFactory();
+        this.img = BitmapFactory.decodeResource(this.c.getResources(), R.drawable.power_cd);
         this.height = img.getHeight();
         this.width = img.getWidth();
+        currentScene = new CurrentScene(c);
     }
 
     @Override
     protected void draw(Canvas canvas, Paint painter)
     {
-        canvas.drawRect(new Rect(0, 480, CurrentScene.screenW/15 * 3, CurrentScene.screenH/15), painter);
+        canvas.drawRect(new Rect(0, 480, currentScene.getScreenW()/15 * 3, currentScene.getScreenH()/15), painter);
         canvas.drawBitmap(img, this.x, this.y, painter);
     }
 
@@ -42,16 +45,16 @@ public class PowerUp extends Actor {
 
     public void Collision()
     {
-        if(this.y > CurrentScene.screenH - (this.height * 1.5f) || this.y < 0)
+        if(this.y > currentScene.getScreenH() - (this.height * 1.5f) || this.y < 0)
         {
             this.speedY *= -1;
         }
 
-        if(this.x > CurrentScene.screenW - (this.width * 1.5f) || this.x < 0)
+        if(this.x > currentScene.getScreenW() - (this.width * 1.5f) || this.x < 0)
         {
             this.speedX *= -1;
         }
-        else if(this.x < CurrentScene.screenW)
+        else if(this.x < currentScene.getScreenW())
             this.speedX *= 1;
 
 

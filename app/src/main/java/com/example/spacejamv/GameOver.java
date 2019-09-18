@@ -9,9 +9,13 @@ import com.example.acelerometro.R;
 
 public class GameOver extends Scene{
 
+	private CurrentScene currentScene;
+
 	public GameOver(Context c) {
 		super(c);
-        img = new BitmapFactory().decodeResource(this.c.getResources(), R.drawable.bg);
+		new BitmapFactory();
+		img = BitmapFactory.decodeResource(this.c.getResources(), R.drawable.bg);
+        currentScene = new CurrentScene(c);
 	}
 
 	@Override
@@ -29,7 +33,7 @@ public class GameOver extends Scene{
 		switch(action){
 		
 		case MotionEvent.ACTION_DOWN:
-			CurrentScene.canInstantiate = true;
+			currentScene.setCanInstantiate(true);
 			CurrentScene.changeScene = "menu";
 			break;
 		}
@@ -37,8 +41,7 @@ public class GameOver extends Scene{
 
 	@Override
 	protected void Update() {
-		// TODO Auto-generated method stub
-		
+
 	}
 
 }
