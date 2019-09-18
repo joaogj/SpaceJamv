@@ -73,6 +73,7 @@ public class CurrentSceneActivity extends Activity implements SensorEventListene
 
 	}
 
+	//atualiza as direções baseada no sensor
 	@Override
 	public void onSensorChanged(SensorEvent event) 
 	{
