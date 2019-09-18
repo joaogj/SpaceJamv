@@ -11,7 +11,7 @@ public class GameOver extends Scene{
 
 	private CurrentScene currentScene;
 
-	public GameOver(Context c) {
+	GameOver(Context c) {
 		super(c);
 		img = BitmapFactory.decodeResource(this.c.getResources(), R.drawable.bg);
         currentScene = new CurrentScene(c);

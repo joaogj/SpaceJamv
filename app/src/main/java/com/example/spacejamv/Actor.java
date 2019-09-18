@@ -20,33 +20,21 @@ public abstract class Actor
 	protected abstract void draw(Canvas canvas,Paint painter);	
 
 	protected boolean collision1(Actor actor, Enemy enemy){
-		if(actor.x + actor.width > enemy.x && actor.x < enemy.x + enemy.width &&
-			actor.y + actor.height > enemy.y && actor.y < enemy.y + enemy.height ){
-			return true;
-		}
-		return false;
+		return actor.x + actor.width > enemy.x && actor.x < enemy.x + enemy.width &&
+				actor.y + actor.height > enemy.y && actor.y < enemy.y + enemy.height;
 	}
 	
 	protected boolean collision3(Enemy enemy){
-		if(enemy.x < 0 - enemy.width ){
-			return true;
-		}
-		return false;
+		return enemy.x < 0 - enemy.width;
 	}
 	
 	protected boolean collision4(Actor actor, Actor actor2){
-		if(actor.x + actor.width > actor2.x && actor.x < actor2.x + actor2.width &&
-			actor.y + actor.height > actor2.y && actor.y < actor2.y + actor2.height ) {
-			return true;
-		}
-		return false;
+		return actor.x + actor.width > actor2.x && actor.x < actor2.x + actor2.width &&
+				actor.y + actor.height > actor2.y && actor.y < actor2.y + actor2.height;
 	}
 	
 	protected boolean collision5(Actor actor){
-		if(actor.x + actor.width < currentScene.getScreenW() && actor.x + actor.width > 0 &&
-			actor.y + actor.height < currentScene.getScreenH() && actor.y + actor.height > 0 ){
-			return false;
-		}
-		return true;
+		return actor.x + actor.width >= currentScene.getScreenW() || actor.x + actor.width <= 0 ||
+				actor.y + actor.height >= currentScene.getScreenH() || actor.y + actor.height <= 0;
 	}
 }

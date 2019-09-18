@@ -40,7 +40,7 @@ public class PowerUp extends Actor {
         this.y += speedY;
     }
 
-    public void collision()
+    private void collision()
     {
         if(this.y > currentScene.getScreenH() - (this.height * 1.5f) || this.y < 0)
         {

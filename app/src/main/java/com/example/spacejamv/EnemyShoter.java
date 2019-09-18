@@ -38,7 +38,7 @@ public class EnemyShoter extends Enemy
 	}
 	
 	@Override
-	public void Update(Ship ship){
+	public void update(Ship ship){
 				
 		if(this.y > ship.y){
 			this.y -= currentScene.getScreenH()/400;

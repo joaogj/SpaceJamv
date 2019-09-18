@@ -43,7 +43,7 @@ public class EnemyManager extends Actor{
 		ship.getScore();
 		//for dos inimigos
 		for(int i = 0; i < enemies.size(); i++){
-			enemies.get(i).Update(ship);
+			enemies.get(i).update(ship);
 
 			// Inimigos canto da tela
 			if(collision3(enemies.get(i))){
