@@ -14,7 +14,9 @@ public class CurrentSceneActivity extends Activity implements SensorEventListene
     private Sensor mAccelerometer;
 
     
-    public static float x,y,z;
+    public static float x;
+    public static float y;
+    public static float z;
     
     @Override
     public void onCreate(Bundle savedInstanceState) 
@@ -43,14 +45,12 @@ public class CurrentSceneActivity extends Activity implements SensorEventListene
 	@Override
 	public void onAccuracyChanged(Sensor arg0, int arg1) 
 	{
-		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void onSensorChanged(SensorEvent event) 
 	{
-		// TODO Auto-generated method stub
 		 y = event.values[0];
 	     x = event.values[1];
 	     z = event.values[2];

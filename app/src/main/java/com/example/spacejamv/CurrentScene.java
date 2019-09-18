@@ -12,15 +12,12 @@ import android.view.View;
 public class CurrentScene extends View implements Runnable
 {
 
-	public static int screenW, screenH;
+	public static int screenW;
+	public static int screenH;
 
-	private int time = 1;	
-	
 	private Handler handler;
 	private Context c;
-	
-	private Paint paint;
-	
+
 	private RunningScene runningScene;
 	
 	public static boolean canInstantiate = true;
@@ -36,8 +33,8 @@ public class CurrentScene extends View implements Runnable
 		setBackgroundColor(Color.WHITE);
 		
 		c = context;
-		
-		paint = new Paint();
+
+		Paint paint = new Paint();
 		paint.setColor(Color.RED);
 		paint.setTextSize(screenW/5.0f);
 		
@@ -96,6 +93,7 @@ public class CurrentScene extends View implements Runnable
 		//Adiciona o Runnable na fila de mensagens da thread principal para ser executado depois de um tempo espec?fico.
 		// Em outras palavras, reexecuta o run.
 
+		int time = 1;
 		handler.postDelayed(this, time);
 
 		update();

@@ -1,5 +1,6 @@
 package com.example.spacejamv;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -11,7 +12,7 @@ import android.graphics.Paint;
 public class EnemyManager extends Actor{
 	
 	private List<Enemy> enemies;
-	private Random random = new Random();
+	private Random random = new SecureRandom();
 
 	public EnemyManager (Context c){
 		this.c = c;

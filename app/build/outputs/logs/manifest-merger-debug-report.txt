@@ -4,10 +4,10 @@ ADDED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml:2:1-
 INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml:2:1-27:12
 INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml:2:1-27:12
 INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml:2:1-27:12
-MERGED from [com.android.support:appcompat-v7:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/47b9057fdc03d41e1b5a3be4d9055a2c/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/a359a0384a4fc0973f1b6e7358752daf/AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/20a26dc4bce8941ac72e8a5012683a19/AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:support-v4:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/16087d12d6a239e1ec1751de0604b14c/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/730c1ce620638492b0934a948d9e4027/AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/20d7c610425772c783a2ed35f9100690/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/30932c694ebf77b15f687feb122f85b0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-v4:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/b40476769cbf0b8f739d56cc1fcafb03/AndroidManifest.xml:17:1-24:12
 INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml:2:1-27:12
 INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml:2:1-27:12
 INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml:2:1-27:12
@@ -27,14 +27,14 @@ INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml:2
 		INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml
 application
 ADDED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml:7:5-25:19
-MERGED from [com.android.support:appcompat-v7:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/47b9057fdc03d41e1b5a3be4d9055a2c/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/47b9057fdc03d41e1b5a3be4d9055a2c/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/a359a0384a4fc0973f1b6e7358752daf/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/a359a0384a4fc0973f1b6e7358752daf/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/20a26dc4bce8941ac72e8a5012683a19/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/20a26dc4bce8941ac72e8a5012683a19/AndroidManifest.xml:7:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/16087d12d6a239e1ec1751de0604b14c/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/16087d12d6a239e1ec1751de0604b14c/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/730c1ce620638492b0934a948d9e4027/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/730c1ce620638492b0934a948d9e4027/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/20d7c610425772c783a2ed35f9100690/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/20d7c610425772c783a2ed35f9100690/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/30932c694ebf77b15f687feb122f85b0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/30932c694ebf77b15f687feb122f85b0/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/b40476769cbf0b8f739d56cc1fcafb03/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/b40476769cbf0b8f739d56cc1fcafb03/AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml:10:9-41
 	android:icon
@@ -67,18 +67,18 @@ uses-sdk
 INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml
 INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:appcompat-v7:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/47b9057fdc03d41e1b5a3be4d9055a2c/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/47b9057fdc03d41e1b5a3be4d9055a2c/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/a359a0384a4fc0973f1b6e7358752daf/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/a359a0384a4fc0973f1b6e7358752daf/AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/20a26dc4bce8941ac72e8a5012683a19/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/20a26dc4bce8941ac72e8a5012683a19/AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/16087d12d6a239e1ec1751de0604b14c/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/16087d12d6a239e1ec1751de0604b14c/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/730c1ce620638492b0934a948d9e4027/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/730c1ce620638492b0934a948d9e4027/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/20d7c610425772c783a2ed35f9100690/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/20d7c610425772c783a2ed35f9100690/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/30932c694ebf77b15f687feb122f85b0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/30932c694ebf77b15f687feb122f85b0/AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/b40476769cbf0b8f739d56cc1fcafb03/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/b40476769cbf0b8f739d56cc1fcafb03/AndroidManifest.xml:20:5-43
 INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml
 INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/47b9057fdc03d41e1b5a3be4d9055a2c/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:23.4.0] /home/devops/.gradle/caches/transforms-2/files-2.1/730c1ce620638492b0934a948d9e4027/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml
 		ADDED from /home/devops/Projetos/SpaceJamv/app/src/main/AndroidManifest.xml

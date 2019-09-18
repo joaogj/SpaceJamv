@@ -12,8 +12,8 @@ public abstract class Enemy
 	protected Bitmap img;
 	protected int x, y, height, width;
 	protected Context c;
-	protected List<Shot> shots;
-	
+//	protected List<Shot> shots;
+
 	protected abstract void draw(Canvas canvas,Paint painter);
 
 	

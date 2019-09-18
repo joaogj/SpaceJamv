@@ -16,11 +16,12 @@ public class Enemy_Shoter extends Enemy
 
 	public Enemy_Shoter(int x, int y, Context c)
 	{		
-		shots = new ArrayList<Shot>();
+		shots = new ArrayList<>();
 		this.x = x;
 		this.y = y;
 		this.c = c;
-		this.img = new BitmapFactory().decodeResource(this.c.getResources(), R.drawable.enemy1);
+		new BitmapFactory();
+		this.img = BitmapFactory.decodeResource(this.c.getResources(), R.drawable.enemy1);
 		this.height = img.getHeight();
 		this.width = img.getWidth();
 	}
@@ -49,10 +50,8 @@ public class Enemy_Shoter extends Enemy
 		else if(this.y < ship.y){
 			this.y += CurrentScene.screenH/400;
 		}
-		if(this.y + (this.height * 2) > ship.y && this.y < ship.y + (ship.height * 2) ){
-			if(shots.size() < 1){
-				shots.add(new Shot(this.x - this.width, (int) (this.y - this.height/3f), this.c));
-			}
+		if(this.y + (this.height * 2) > ship.y && this.y < ship.y + (ship.height * 2) && shots.isEmpty()){
+			shots.add(new Shot(this.x - this.width, (int) (this.y - this.height / 3f), this.c));
 		}
 
 		for(int i = 0; i < shots.size(); i++)

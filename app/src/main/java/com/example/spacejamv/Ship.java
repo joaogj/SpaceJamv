@@ -41,11 +41,13 @@ public class Ship extends Actor
 	{
 		c.getResources();
 		shots = new ArrayList<>();
-		imgLife = new BitmapFactory().decodeResource(c.getResources(), R.drawable.life);
+		new BitmapFactory();
+		imgLife = BitmapFactory.decodeResource(c.getResources(), R.drawable.life);
 		this.x = x;
 		this.y = y;
 		this.c = c;
-		this.img = new BitmapFactory().decodeResource(c.getResources(), R.drawable.ship);
+		new BitmapFactory();
+		this.img = BitmapFactory.decodeResource(c.getResources(), R.drawable.ship);
 		this.height = img.getHeight();
 		this.width = img.getWidth();
 		this.life = 3;
