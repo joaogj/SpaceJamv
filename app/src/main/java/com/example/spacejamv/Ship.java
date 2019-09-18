@@ -73,12 +73,14 @@ public class Ship extends Actor
 	@Override
 	public void draw(Canvas canvas, Paint painter)
 	{
+		//faz a varredura da quantidade de vidas que serão desenhadas na cena
 		for(int i = 0; i < this.life; i++){
 			canvas.drawBitmap(imgLife, currentScene.getScreenW()/15.0f * i, currentScene.getScreenH()/15.0f, painter);
 		}
 
 		canvas.drawBitmap(img, this.x, this.y, painter);
-		
+
+		//faz a varredura da quantidade de tiros que serão desenhados na cena
 		for(int i = 0; i < shots.size(); i++)
 		{
 			shots.get(i).draw(canvas, painter);
@@ -114,7 +116,8 @@ public class Ship extends Actor
 	public void update(float speed)
 	{
 		collision();
-		
+
+		//verifica quando a vida chega a 0, para fazer a transição de cena para Game Over
 		if(life <= 0){
 			this.record.saveRecord(score);
 			currentScene.setCanInstantiate(true);

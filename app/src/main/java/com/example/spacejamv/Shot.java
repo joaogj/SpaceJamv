@@ -25,7 +25,8 @@ public class Shot extends Actor
 	{
 		canvas.drawBitmap(img, this.x, this.y, painter);
 	}
-	
+
+	//atualização do tiro, com a movimentação incrementando o x com a variável speed
 	public void Update(float speed)
 	{
 		//movement

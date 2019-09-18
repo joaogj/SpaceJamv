@@ -25,6 +25,7 @@ public class GameOver extends Scene{
 		drawCenter(canvas, painter[0], "Record: " + record.getRecordString());
 	}
 
+	//verifica o toque na tela para fazer a transição de cena para o menu
 	@Override
 	protected void MotionEvent(android.view.MotionEvent event) {
 		int action = event.getAction();
