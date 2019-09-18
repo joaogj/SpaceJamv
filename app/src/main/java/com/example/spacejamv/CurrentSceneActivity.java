@@ -47,7 +47,8 @@ public class CurrentSceneActivity extends Activity implements SensorEventListene
     {
         super.onCreate(savedInstanceState);
         setContentView(new CurrentScene(this));
-         
+
+        //definição do sensor de acelerômetro
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
     }

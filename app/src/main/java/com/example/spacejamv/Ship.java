@@ -85,7 +85,8 @@ public class Ship extends Actor
 		}
 		canvas.drawText("Score : ", currentScene.getScreenW()/2.0f, 0, painter);
 	}
-	
+
+	//verifica o touch e se o tiro está no cooldown, para poder instanciar um novo
 	protected void motionEvent(MotionEvent event)
 	{
 		int action = event.getAction();

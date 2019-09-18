@@ -88,7 +88,8 @@ public class CurrentScene extends View implements Runnable
 		super.draw(canvas);
 		runningScene.draw(canvas);
 	}
-	
+
+	//fun??o que gerencia a transi??o de cenas
 	private void update()
 	{
 

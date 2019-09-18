@@ -20,7 +20,7 @@ public class EnemyManager extends Actor{
 
 		enemies = new ArrayList<>();
 	}
-	
+	//função que renderiza os inimigos
 	@Override
 	protected void draw(Canvas canvas, Paint painter)
 	{
@@ -28,7 +28,8 @@ public class EnemyManager extends Actor{
 			enemies.get(i).draw(canvas, painter);
 		}
 	}
-	
+
+	//função que chama novas waves de inimigos
 	private void spawn(){
 		if(enemies.size() < 3){
 			random.nextDouble();
