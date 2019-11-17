@@ -37,7 +37,6 @@ public class EnemyShoter extends Enemy
 		}
 	}
 	
-	@Override
 	public void update(Ship ship){
 				
 		if(this.y > ship.y){

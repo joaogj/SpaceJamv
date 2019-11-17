@@ -12,15 +12,14 @@ public class PowerUp extends Actor {
 
     private CurrentScene currentScene;
 
-    PowerUp(int x, int y, Context c)
+    PowerUp()
     {
 
         c.getResources();
-        this.x = x;
-        this.y = y;
+        this.x = currentScene.getScreenW()/2;
+        this.y = currentScene.getScreenH()/2;
         this.speedX = 3;
         this.speedY = 3;
-        this.c = c;
         this.img = BitmapFactory.decodeResource(this.c.getResources(), R.drawable.power_cd);
         this.height = img.getHeight();
         this.width = img.getWidth();
@@ -57,15 +56,15 @@ public class PowerUp extends Actor {
 
     }
 
-    public void update(Ship ship){
+    public void update(){
 
-        for(int i = 0; i < ship.getShots().size(); i++)
-        {
-            if(collision4(this, ship.getShots().get(i)))
-            {
-                ship.setCanShot(true);
-            }
-        }
+//        for(int i = 0; i < ship.getShots().size(); i++)
+//        {
+//            if(collision4(this, ship.getShots().get(i)))
+//            {
+//                ship.setCanShot(true);
+//            }
+//        }
 
 
         movement();

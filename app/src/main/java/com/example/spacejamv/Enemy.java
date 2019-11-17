@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 
-public abstract class Enemy
+public class Enemy extends Actor
 {
 	protected Bitmap img;
 	protected int x;
@@ -14,8 +14,8 @@ public abstract class Enemy
 	protected int width;
 	protected Context c;
 
-	protected abstract void draw(Canvas canvas,Paint painter);
+	@Override
+	protected void draw(Canvas canvas, Paint painter) {
 
-	
-	protected void update(Ship ship){ }
+	}
 }

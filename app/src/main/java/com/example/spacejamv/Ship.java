@@ -19,21 +19,9 @@ public class Ship extends Actor
 		return shots;
 	}
 
-	public void setShots(List<Shot> shots) {
-		this.shots = shots;
-	}
-
 	private List<Shot> shots;
 	private CurrentScene currentScene;
 	private Record record;
-
-	public Record getRecord() {
-		return record;
-	}
-
-	public void setRecord(Record record) {
-		this.record = record;
-	}
 
 	public int getScore() {return score;}
 
@@ -53,14 +41,12 @@ public class Ship extends Actor
 
 	private Bitmap imgLife;
 
-	public Ship(int x, int y, Context c)
+	public Ship()
 	{
-		c.getResources();
 		shots = new ArrayList<>();
 		imgLife = BitmapFactory.decodeResource(c.getResources(), R.drawable.life);
-		this.x = x;
-		this.y = y;
-		this.c = c;
+		this.x = 0;
+		this.y = currentScene.getScreenH() / 2;
 		this.img = BitmapFactory.decodeResource(c.getResources(), R.drawable.ship);
 		this.height = img.getHeight();
 		this.width = img.getWidth();
@@ -110,8 +96,9 @@ public class Ship extends Actor
 		}
 	}
 	
-	public void update(float speed)
+	public void update()
 	{
+		float speed = 1;
 		collision();
 
 		//verifica quando a vida chega a 0, para fazer a transição de cena para Game Over

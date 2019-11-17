@@ -16,12 +16,17 @@ public abstract class Actor
 	protected int speedY;
 	protected int life;
 	protected Context c;
-	private CurrentScene currentScene = new CurrentScene(c);
+	private CurrentScene currentScene;
 	protected abstract void draw(Canvas canvas,Paint painter);	
 
-	protected boolean collision1(Actor actor, Enemy enemy){
-		return actor.x + actor.width > enemy.x && actor.x < enemy.x + enemy.width &&
-				actor.y + actor.height > enemy.y && actor.y < enemy.y + enemy.height;
+	protected Actor(){
+		c.getResources();
+		currentScene = new CurrentScene(c);
+	}
+
+	protected boolean collision1(Actor actor, Actor actor2){
+		return actor.x + actor.width > actor2.x && actor.x < actor2.x + actor2.width &&
+				actor.y + actor.height > actor2.y && actor.y < actor2.y + actor2.height;
 	}
 	
 	protected boolean collision3(Enemy enemy){
