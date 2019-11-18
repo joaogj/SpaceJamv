@@ -38,17 +38,18 @@ public class EnemyShoter extends Enemy
 	}
 	
 	public void update(Ship ship){
-				
-		if(this.y > ship.y){
-			this.y -= currentScene.getScreenH()/400;
+
+		EnemyContext enemyContext = new EnemyContext();
+
+		if(this.y != ship.y){
+			enemyContext.setEnemyStrategy(new EnemyStrategyFollow());
 		}
-		else if(this.y < ship.y){
-			this.y += currentScene.getScreenH()/400;
-		}
+
 		if(this.y + (this.height * 2) > ship.y && this.y < ship.y + (ship.height * 2) && shots.isEmpty()){
-			ShotType type = ShotFactory.getShotType("enemy", c);
-			shots.add(new Shot(this.x - this.width, (int) (this.y - this.height / 3f), type));
+			enemyContext.setEnemyStrategy(new EnemyStrategyShoot());
 		}
+
+		enemyContext.executeEnemyStrategy(this, ship);
 
 		for(int i = 0; i < shots.size(); i++)
 		{
@@ -64,4 +65,18 @@ public class EnemyShoter extends Enemy
 			}
 		}
 	}
+
+	public List<Shot> getShots() {
+		return shots;
+	}
+
+	public void setShots(List<Shot> shots) {
+		this.shots = shots;
+	}
+
+	public CurrentScene getCurrentScene() {
+		return currentScene;
+	}
+
+
 }
