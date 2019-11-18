@@ -77,9 +77,9 @@ public class Ship extends Actor
 	protected void motionEvent(MotionEvent event)
 	{
 		int action = event.getAction();
-
+		ShotType type = ShotFactory.getShotType("ally",c);
 		if(canShot && action == MotionEvent.ACTION_DOWN) {
-			shots.add(new Shot(this.x + this.width, (int) (this.y + this.height / 3f), this.c));
+			shots.add(new Shot(this.x + this.width, (int) (this.y + this.height / 3f), type));
 			setCanShot(false);
 		}
 	}

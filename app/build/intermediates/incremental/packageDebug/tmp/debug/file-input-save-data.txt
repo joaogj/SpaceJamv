@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Tue Sep 17 12:05:28 BRT 2019
-0.baseType=DIRECTORY
-0.base=/home/devops/Projetos/SpaceJamv/app/build/intermediates/transforms/dexMerger/debug/0
-0.path=classes.dex
-0.set=DEX
-count=1

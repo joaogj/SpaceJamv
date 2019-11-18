@@ -20,9 +20,9 @@ public abstract class Actor
 	protected abstract void draw(Canvas canvas,Paint painter);	
 
 	protected Actor(){
-		c.getResources();
-		currentScene = new CurrentScene(c);
-	}
+	c.getResources();
+	currentScene = new CurrentScene(c);
+}
 
 	protected boolean collision1(Actor actor, Actor actor2){
 		return actor.x + actor.width > actor2.x && actor.x < actor2.x + actor2.width &&

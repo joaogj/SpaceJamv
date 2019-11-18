@@ -46,7 +46,8 @@ public class EnemyShoter extends Enemy
 			this.y += currentScene.getScreenH()/400;
 		}
 		if(this.y + (this.height * 2) > ship.y && this.y < ship.y + (ship.height * 2) && shots.isEmpty()){
-			shots.add(new Shot(this.x - this.width, (int) (this.y - this.height / 3f), this.c));
+			ShotType type = ShotFactory.getShotType("enemy", c);
+			shots.add(new Shot(this.x - this.width, (int) (this.y - this.height / 3f), type));
 		}
 
 		for(int i = 0; i < shots.size(); i++)

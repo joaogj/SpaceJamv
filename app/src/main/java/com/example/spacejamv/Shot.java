@@ -9,21 +9,23 @@ import android.graphics.Paint;
 
 public class Shot extends Actor
 {
-	
-	public Shot(int x, int y, Context c)
+	private ShotType type;
+	private int x;
+	private int y;
+
+
+	public Shot(int x, int y, ShotType type)
 	{
 		this.x = x;
 		this.y = y;
-		this.c = c;
+		this.type = type;
 		this.img = BitmapFactory.decodeResource(this.c.getResources(), R.drawable.shot);
-		this.height = img.getHeight();
-		this.width = img.getWidth();
 	}
 	
 	@Override
 	public void draw(Canvas canvas, Paint painter)
 	{
-		canvas.drawBitmap(img, this.x, this.y, painter);
+		type.draw(canvas, painter, this.x, this.y);
 	}
 
 	//atualização do tiro, com a movimentação incrementando o x com a variável speed
